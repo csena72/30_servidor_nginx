@@ -1,0 +1,29 @@
+<div class="row mt-4">
+  <div class="col-md-8 mx-auto">
+    <table class="table table-striped table-condensed">
+      <thead>
+        <tr>          
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Imagen</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each productos }}
+        <tr>          
+          <td>{{this.title}}</td>
+          <td>{{this.price}}</td>
+          <td> <img src="/public/assets/img/{{this.thumbnail}}.png" alt=" {{this.thumbnail}}" /></td>
+        </tr>
+        {{else}}
+        <tr>
+          <td class="text-center" colspan="4">No hay productos</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <div class="login-or">
+      <hr class="hr-or">
+    </div>
+  </div>
+</div>

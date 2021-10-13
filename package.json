@@ -1,0 +1,45 @@
+{
+  "name": "30_servidor_nginx",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u00003\u00000\u0000_\u0000s\u0000e\u0000r\u0000v\u0000i\u0000d\u0000o\u0000r\u0000_\u0000n\u0000g\u0000i\u0000n\u0000x\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "prod": "forever start src/server.js",
+    "start:dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csena72/30_servidor_nginx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csena72/30_servidor_nginx/issues"
+  },
+  "homepage": "https://github.com/csena72/30_servidor_nginx#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.5",
+    "mongoose-findorcreate": "^3.0.0",
+    "normalizr": "^3.6.1",
+    "passport": "^0.5.0",
+    "passport-facebook": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  }
+}

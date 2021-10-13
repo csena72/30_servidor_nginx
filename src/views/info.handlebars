@@ -1,0 +1,27 @@
+<div class="container my-3">
+    <div class="jumbotron" style="background-color: gray;color: white;">
+        <h1>INFO</h1>
+
+          <div class="alert alert-primary" style="background-color: brown;color: white;">
+          <p>Argumentos de entrada:</p>
+          <p> {{data.args}}</p>
+          </div>
+          <p>Nombre de la plataforma: {{data.platform}}</p>
+          <p>Versión de Node.js: {{data.version}}</p>
+
+          <div class="alert alert-primary" style="background-color: brown;color: white;">
+          <p>Uso de memoria:</p>
+          <p>rss: {{data.mem.rss}}</p>
+          <p>heapTotal: {{data.mem.heapTotal}}</p>
+          <p>heapUsed: {{data.mem.heapUsed}}</p>
+          <p>external: {{data.mem.external}}</p>
+          <p>arrayBuffers: {{data.mem.arrayBuffers}}</p>
+        </div>
+          <p>Path de ejecución: {{data.path}}</p>
+          <p>Process Id: {{data.pid}}</p>
+          <p>Carpeta corriente: {{data.folder}}</p>
+          <p>Cantidad de procesadores: {{data.cpus}}</p>
+
+        <button class="btn btn-warning my-5" onclick="location.href='/'">VOLVER</button>
+    </div>
+</div>

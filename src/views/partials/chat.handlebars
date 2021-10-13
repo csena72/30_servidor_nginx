@@ -1,0 +1,54 @@
+<div class="col-md-6 mx-auto text-center mt-2">
+    <div class="header-title">
+        <h2 class="wv-heading--subtitle">
+            Centro de Mensajes
+        </h2>
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="col-md-8 mx-auto">
+        <div class="border rounded mb-3 p-2" id="mensajes"></div>
+        <div class="myform form ">
+            <div class="form-group">
+                <input type="email" name="email" id="email" class="form-control my-input" 
+                    placeholder="Ingrese email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="nombre" id="nombre" class="form-control my-input" 
+                    placeholder="Ingrese nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="apellido" id="apellido" class="form-control my-input" 
+                    placeholder="Ingrese apellido" required>
+            </div>            
+            <div class="form-group">
+                <input type="text" name="edad" id="edad" class="form-control my-input" 
+                    placeholder="Ingrese edad" required>
+            </div>            
+            <div class="form-group">
+                <input type="text" name="alias" id="alias" class="form-control my-input" 
+                    placeholder="Ingrese su alias" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="avatar" id="avatar" class="form-control my-input" 
+                    placeholder="Ingrese link a su avatar" required>
+            </div>
+            <div class="form-group">
+                <textarea name="textarea" name="price" id="mensaje" class="form-control my-input"
+                    placeholder="Ingresa un mensaje..." required></textarea>
+            </div>
+            <div class="text-center ">
+                <button onclick="enviarMensaje()" type="submit" class=" btn btn-block send-button tx-tfm" id="enviar">Enviar
+                    mensaje</button>
+            </div>
+            <div class="col-md-12 ">
+                <div class="login-or">
+                    <hr class="hr-or">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="/public/input-chat.js"></script>
