@@ -14,7 +14,7 @@ exports.infoRender = (req, resp) => {
     resp.render('info', {data: data});
 };
 
-exports.ramdoms = (req, resp) => {
+exports.randoms = (req, resp) => {
     const cant = req.query.cant ?? 100000000;
 
     console.log(cant)
